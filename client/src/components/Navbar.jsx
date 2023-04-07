@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 z-40 w-full fixed top-0 py-2">
+    <nav className="bg-darkgrey z-40 w-full fixed top-0 py-2">
       <div className="max-w-7xl  px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute right-0 flex items-center md:hidden">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
             {/* Nav links */}
             <div className="hidden md:block md:ml-10">
-              <div className="flex items-baseline space-x-4">
+              <div className="flex space-x-4 justify-center items-center">
                 <Link
                   to="/"
                   className={`text-white px-3 py-2 rounded-md text-sm font-medium ${

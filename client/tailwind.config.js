@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
   theme: {
     extend: {
       fontFamily: {
@@ -12,6 +13,7 @@ export default {
         darkgrey: "#292F36",
         lightpurple: "#F4F0EC",
         lightbrown: "#CDA274",
+        lightblue: "#4D5053",
       },
     },
   },
