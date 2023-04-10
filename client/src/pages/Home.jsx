@@ -2,7 +2,7 @@ import React from "react";
 import header from "../assets/header1.png";
 import image1 from "../assets/image1.png";
 import { FaAngleRight, FaPhoneAlt } from "react-icons/fa";
-import Testis from "../components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import ProjectsTab from "../components/ProjectsTab";
 import ProjectsStatistics from "../components/Statistics";
 import JoinUsSection from "../components/JoinUs";
@@ -35,8 +35,8 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             <div className="bg-white rounded-lg shadow-lg p-6 justify-center">
-              <h3 className="text-lg font-medium mb-2">Project Plan</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-lg font-medium mb-2 font-dm">Project Plan</h3>
+              <p className="text-gray-600 mb-4 font-jost">
                 A well-crafted project plan helps to ensure that the project is
                 completed on time, within budget, and to the satisfaction of all
                 stakeholders
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button className="flex items-center font-jost bg-darkgrey text-white font-medium rounded-full px-6 py-3 shadow-lg hover:text-darkgrey hover:bg-white">
+            <button className="flex items-center font-jost bg-darkgrey text-whfontite -medium rounded-full px-6 py-3 shadow-lg hover:text-darkgrey hover:bg-white">
               Get Free Quote <FaAngleRight className="ml-2" />
             </button>
           </div>
@@ -116,18 +116,18 @@ const Home = () => {
       </section>
       <section className="bg-white py-20">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center font-dm">
+          <h2 className="text-4xl font-bold mb-12 text-center font-dm text-darkgrey">
             What the People Thinks <br /> About Us
           </h2>
-          <Testis />
+          <Testimonials />
         </div>
       </section>
       <section className="flex justify-center flex-col px-36">
         <div>
-          <h2 className="text-4xl font-bold mb-2 text-center font-dm">
+          <h2 className="text-4xl font-bold mb-2 text-center font-dm text-darkgrey">
             Follow Our Projects
           </h2>
-          <p className="font font-jost text-center text-xl mb-4">
+          <p className="font font-jost text-center text-xl mb-4 text-darkgrey">
             Our project section features a variety of stunning interior design
             projects that are sure to inspire you. <br />
             From modern kitchens to cozy bedrooms, <br /> our team of talented

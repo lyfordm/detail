@@ -29,7 +29,7 @@ const ProjectsTab = () => {
       route: "projects/living",
     },
     {
-      id: 2,
+      id: 4,
       name: "study",
       image: study,
       route: "projects/study",
@@ -46,7 +46,7 @@ const ProjectsTab = () => {
             className="w-full rounded-[20px]"
           />
           <div className="p-1 font-dm flex pt-3 flex-row justify-between">
-            <h3 className="text-xl mb-2">{project.name}</h3>
+            <h3 className="text-xl mb-2 text-darkgrey">{project.name}</h3>
  
             <Link
               to={project.route}

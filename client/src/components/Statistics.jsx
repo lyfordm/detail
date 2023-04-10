@@ -7,7 +7,7 @@ const ProjectsStatistics = () => {
   const happyClients = 95
 
   return (
-    <div className="flex justify-center items-center gap-4 h-[250px] bg-lightpurple">
+    <div className="flex justify-center items-center gap-4 h-[250px] bg-lightpurple text-darkgrey">
       <div className="flex flex-col items-center border-r-2 pr-4">
         <h2 className="text-4xl font-bold font-dm">{years}</h2>
         <p className="text-gray-600 font-jost">Years</p>
