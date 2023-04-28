@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-darkgrey z-40 w-full fixed top-0 py-2">
-      <div className="max-w-7xl  px-2 sm:px-6 lg:px-8">
+    <nav className="bg-darkgrey z-40 w-full fixed top-0 py-2 px-3">
+      <div className="max-w-7xl  xs:px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute right-0 flex items-center md:hidden">
             {/* Mobile menu button */}
@@ -59,15 +59,16 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          <div className="flex items-center justify-center md:justify-start flex-1">
+          <div className="flex items-center justify-between md:justify-between flex-1">
             {/* Logo */}
-            <div className="flex-shrink-0">
+           <div className="flex-shrink-0 flex items-center">
               <img
-                className="h-8 w-auto"
+                className="block  h-8 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                 alt="Workflow"
               />
-            </div>
+              </div>
+
             {/* Nav links */}
             <div className="hidden md:block md:ml-10">
               <div className="flex space-x-4 justify-center items-center">

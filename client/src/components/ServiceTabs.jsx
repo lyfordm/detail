@@ -39,6 +39,13 @@ const ServiceTabs = () => {
         "Our team of experienced professionals has a keen eye for detail and works tirelessly to ensure that every element of the design plan is implemented perfectly.",
       route: "projects/study",
     },
+    {
+      id: 5,
+      name: "Good Delivery",
+      desription:
+        "By prioritizing good delivery, interior designers can ensure that their clients are satisfied with the end result and that the space meets all of their functional and aesthetic needs.",
+      route: "project",
+    },
   ];
 
   return (
@@ -46,7 +53,7 @@ const ServiceTabs = () => {
       {serviceList.map((service, index) => (
         <div
           key={index}
-          className="bg-gray-200 rounded-lg shadow-lg p-8 flex flex-col justify-between"
+          className="bg-lightpurple rounded-lg shadow-lg p-8 flex flex-col justify-between"
         >
           <div>
             <h3 className="font-bold mb-2 font-dm text-darkgrey flex items-center justify-center self-center">

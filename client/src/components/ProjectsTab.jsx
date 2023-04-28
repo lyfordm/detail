@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {FaAngleRight} from "react-icons/fa"
 
-import study from "../assets/study.png";
-import living from "../assets/living.png";
-import bedroom from "../assets/bedroom.png";
-import kitchen from "../assets/kitchen.png";
+
+import bed1 from "../assets/bed-1.jpg";
+import kitchen4 from "../assets/kitchen-4.jpg";
+import living3 from "../assets/living3.jpg";
+import study4 from "../assets/study-4.jpg";
 
 
 const ProjectsTab = () => {
@@ -13,26 +14,26 @@ const ProjectsTab = () => {
     {
       id: 1,
       name: "Kitchen",
-      image: kitchen,
-      route: "projects/kitchen",
+      image: kitchen4,
+      route: "projects/4",
     },
     {
       id: 2,
       name: "bedroom",
-      image: bedroom,
-      route: "projects/bedroom",
+      image: bed1,
+      route: "projects/13",
     },
     {
       id: 3,
       name: "living",
-      image: living,
-      route: "projects/living",
+      image: living3,
+      route: "projects/19",
     },
     {
       id: 4,
       name: "study",
-      image: study,
-      route: "projects/study",
+      image: study4,
+      route: "projects/8",
     },
   ];
 

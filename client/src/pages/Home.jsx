@@ -10,23 +10,23 @@ import JoinUsSection from "../components/JoinUs";
 const Home = () => {
   return (
     <div className="mt-20">
-      <section className="relative">
+      <section className="relative ">
         <img
           src={header}
           alt="header1"
-          className="w-3/5 h-2/5 mx-auto py-10  rounded-tl-none rounded-br-none rounded-tr-[120px] rounded-bl-[120px]"
+          className="md:w-3/5 xs:w-full h-2/5 mx-auto md:py-10  md:rounded-tl-none md:rounded-br-none md:rounded-tr-[120px] md:rounded-bl-[120px]"
         />
-        <div class="absolute inset-0 flex w-4/5 top-[200px] left-[50px] h-3/5 justify-center ">
+        <div class="absolute inset-0 flex md:w-4/5 sm:w-3/5 md:top-[200px] xs:top-[100px] md:left-[50px] sm:left-[25px] md:h-3/5 sm:h-2/5 justify-center items-center ">
           <div class="text-start ">
-            <h1 class="text-4xl font-bold font-dm mb-2 text-darkgrey">
-              Let Your Home <br /> Be Detail
+            <h1 class="md:text-4xl xs:text-xl xs:p-10 md:p-0 font-bold font-dm mb-2 text-darkgrey">
+              Let Your Home <br className="hidden md:block" /> Be Detail
             </h1>
-            <p class="text-xl font-jost text-lightblue mb-4">
+            <p class="md:text-xl xs:text-base font-jost text-lightblue md:mb-4 xs:mb-1">
               There are many aspects that make a home great <br /> but detail is
               the key
             </p>
-            <button className="flex items-center font-jost bg-darkgrey text-white font-medium rounded-full px-6 py-3 shadow-lg hover:shadow-xl">
-              Get Started <FaAngleRight className="ml-2" />
+            <button className="flex items-center font-jost bg-darkgrey text-white font-medium md:rounded-full sm:rounded-lg md:px-6 md:py-3 sm:px-6 sm:py-2 shadow-lg hover:shadow-xl md:text-xl xs:text-base">
+              Get Started <FaAngleRight className="md:ml-2 hidden md:block" />
             </button>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             <div className="bg-white rounded-lg shadow-lg p-6 justify-center">
               <h3 className="text-lg font-medium mb-2 font-dm">Project Plan</h3>
-              <p className="text-gray-600 mb-4 font-jost">
+              <p className="text-gray-600 mb-4 text-base font-jost">
                 A well-crafted project plan helps to ensure that the project is
                 completed on time, within budget, and to the satisfaction of all
                 stakeholders
@@ -46,7 +46,9 @@ const Home = () => {
               </button>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 justify-center">
-              <h3 className="text-lg font-medium mb-2">Interior Work</h3>
+              <h3 className="text-lg font-medium font-dm mb-2">
+                Interior Work
+              </h3>
               <p className="text-gray-600 mb-4">
                 We work with clients to understand their unique needs and
                 preferences, and we use our expertise to create beautiful and
@@ -57,7 +59,7 @@ const Home = () => {
               </button>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 justify-center">
-              <h3 className="text-lg font-medium mb-2">Realization</h3>
+              <h3 className="text-lg font-dm font-medium mb-2">Realization</h3>
               <p className="text-gray-600 mb-4">
                 Our team of experienced professionals has a keen eye for detail
                 and works tirelessly to ensure that every element of the design
@@ -73,8 +75,8 @@ const Home = () => {
       <section>
         <div className="flex flex-wrap justify-center items-center py-20">
           <div className="max-w-md mx-4 mb-8">
-            <h2 className="text-3xl font-bold font-dm mb-2 text-darkgrey">
-              We Believe The Art <br /> Of Stylish Livings <br />
+            <h2 className="md:text-3xl xs:text-2xl font-bold  font-dm mb-2 text-darkgrey">
+              We Believe The Art <br className="hidden md:block"/> Of Stylish Livings <br />
               In The Detail
             </h2>
             <p className="mb-4 font-jost text-lightblue">
@@ -89,10 +91,10 @@ const Home = () => {
                   </a>
                 </div>
                 <div class="ml-4">
-                  <h2 class="text-lg font-medium font-dm text-gray-900">
+                  <h2 class="md:text-lg xs:text-base font-medium font-dm text-gray-900">
                     Contact Us
                   </h2>
-                  <p class="mt-1 text-gray-600 font-jost">
+                  <p class="mt-1 text-gray-600 font-jost text-base">
                     Call us at{" "}
                     <a href="tel:+260967803424" class="text-darkgrey">
                       +260 967 803424
@@ -101,7 +103,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button className="flex items-center font-jost bg-darkgrey text-whfontite -medium rounded-full px-6 py-3 shadow-lg hover:text-darkgrey hover:bg-white">
+            <button className="flex items-center font-jost bg-darkgrey text-white -medium rounded-full px-6 py-3 shadow-lg hover:text-darkgrey hover:bg-white">
               Get Free Quote <FaAngleRight className="ml-2" />
             </button>
           </div>

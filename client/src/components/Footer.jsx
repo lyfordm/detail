@@ -53,7 +53,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center items-center font-jost">
-        2023 Copyrights © Detail | designed and developed by Lyford Mwanza
+        2023 Copyrights © Detail | designed and developed by {" "}
+        <a href="https://lyfordmwanza.vercel.app/" className="pl-1">Lyford Mwanza</a> 
       </div>
     </footer>
   );

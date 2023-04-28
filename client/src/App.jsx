@@ -8,21 +8,21 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import FullProject from "./components/FullProjects";
 
 function App() {
   return (
     <>
-   
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/*" element={<Projects />} />
+        <Route path="/projects/:id" element={<FullProject/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    
     </>
   );
 }

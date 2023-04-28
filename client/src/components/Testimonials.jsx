@@ -23,14 +23,20 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-8">
-      {testimonialsData.map((testimonial, index) => (
-        <div key={index} className="bg-gray-200 rounded-lg shadow-lg p-8">
-          <p className="mb-4 text-gray-800 font-jost">"{testimonial.feedback}"</p>
-          <h3 className="font-bold mb-2 font-dm text-darkgrey">{testimonial.name}</h3>
-          <p className="text-gray-600 font-jost">{testimonial.company}</p>
-        </div>
-      ))}
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        {testimonialsData.map((testimonial, index) => (
+          <div key={index} className="bg-gray-200 rounded-lg shadow-lg p-8">
+            <p className="mb-4 text-gray-800 font-jost">
+              "{testimonial.feedback}"
+            </p>
+            <h3 className="font-bold mb-2 font-dm text-darkgrey">
+              {testimonial.name}
+            </h3>
+            <p className="text-gray-600 font-jost">{testimonial.company}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

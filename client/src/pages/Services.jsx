@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
 import kitchen2 from "../assets/kitchen2.png";
-import ServiceTabs from '../components/ServiceTabs';
+import ServiceTabs from "../components/ServiceTabs";
+import HowWeWork from "../components/HowWeWork";
+import JoinUs from "../components/JoinUs";
 
 const Services = () => {
   return (
@@ -14,13 +16,21 @@ const Services = () => {
           </h1>
         </div>
       </header>
-      <section className="py-20 bg-gray-100 ">
+      <section className="py-20 bg-white ">
         <div className="container mx-auto">
           <ServiceTabs />
         </div>
       </section>
+      <section className="py-20 bg-white">
+        <div className="mx-auto flex justify-center">
+          <HowWeWork />
+        </div>
+      </section>
+      <section className="mb-20">
+        <JoinUs />
+      </section>
     </div>
   );
-}
+};
 
-export default Services
+export default Services;
