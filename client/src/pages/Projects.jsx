@@ -4,17 +4,17 @@ import ProjectPage from '../components/ProjectSelection';
 const Projects = () => {
   return (
     <div className="mt-20">
-      <header className="relative">
+      <div className="relative">
         <img src={kitchen2} alt="kitchen2" className="w-full" />
 
-        <div class="flex items-center flex-col justify-center rounded-t-lg absolute w-1/6 h-[80px] inset-x-1/2 -ml-20 bottom-0 px-4 py-8 bg-white text-darkgrey">
-          <h1 class="text-xl font-bold mb-4 font-dm text-center ">
+        <div class="flex items-center flex-col justify-center rounded-t-lg absolute  md:w-1/6 sm:w-3/6 md:h-[80px] sm:h-[20px] inset-x-1/2 -ml-20 bottom-0 md:px-4 sm:px-2 md:py-8 sm:py-4 bg-white text-darkgrey">
+          <h1 class="md:text-xl sm:text-base font-bold md:mb-4 sm:mb-0 font-dm text-center ">
             Our Projects
           </h1>
         </div>
-      </header>
+      </div>
       <section>
-        <ProjectPage/>
+        <ProjectPage />
       </section>
     </div>
   );

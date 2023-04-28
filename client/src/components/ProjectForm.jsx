@@ -36,13 +36,13 @@ function ProjectForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex flex-row gap-5 justify-between mb-5">
+      <div className="flex md:flex-row sm:flex-col gap-5 justify-between mb-5">
         <input
           type="text"
           placeholder="Name"
           id="name"
           name="name"
-          className={`w-1/2 px-3 py-2 appearance-none border-b-2 border-gray-400 font-jost text-gray-700 leading-tight focus:outline-none focus:border-blue-500 ${
+          className={`md:w-1/2 sm:w-full px-3 py-2 appearance-none border-b-2 border-gray-400 font-jost text-gray-700 leading-tight focus:outline-none focus:border-blue-500 ${
             errors.name ? "border-red-500" : "border-gray-400"
           } `}
           value={name}
@@ -55,7 +55,7 @@ function ProjectForm() {
           placeholder="Email"
           id="email"
           name="email"
-          className={`w-1/2 px-3 py-2 appearance-none border-b-2 border-gray-400 font-jost text-gray-700 leading-tight focus:outline-none focus:border-blue-500 ${
+          className={`md:w-1/2 sm:w-full  px-3 py-2 appearance-none border-b-2 border-gray-400 font-jost text-gray-700 leading-tight focus:outline-none focus:border-blue-500 ${
             errors.email ? "border-red-500" : "border-gray-400"
           }`}
           value={email}

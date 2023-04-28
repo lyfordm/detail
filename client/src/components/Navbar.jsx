@@ -61,13 +61,13 @@ const Navbar = () => {
           </div>
           <div className="flex items-center justify-between md:justify-between flex-1">
             {/* Logo */}
-           <div className="flex-shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center">
               <img
                 className="block  h-8 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                 alt="Workflow"
               />
-              </div>
+            </div>
 
             {/* Nav links */}
             <div className="hidden md:block md:ml-10">
@@ -135,7 +135,7 @@ const Navbar = () => {
         >
           {/* Mobile menu, show/hide based on menu state */}
           <div
-            className={`md:hidden h-screen bg-gray-800  ${
+            className={`md:hidden h-screen bg-darkgrey  ${
               isOpen ? "block" : "hidden"
             }`}
             id="mobile-menu"

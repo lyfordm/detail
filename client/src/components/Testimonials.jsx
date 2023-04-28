@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   const testimonialsData = [
     {
-      name: "Lyford Mwanza",
+      name: "Leticia Mwanza",
       feedback:
         "Great Interiors Works exceeded my expectations with their attention to detail and exceptional customer service. From start to finish, they were professional, reliable, and truly passionate about creating a space that fit my personal style and needs. I would highly recommend their services to anyone looking for top-notch interior design.",
       company: "ABC Studios",

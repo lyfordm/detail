@@ -47,11 +47,11 @@ const ProjectsTab = () => {
             className="w-full rounded-[20px]"
           />
           <div className="p-1 font-dm flex pt-3 flex-row justify-between">
-            <h3 className="text-xl mb-2 text-darkgrey">{project.name}</h3>
+            <h3 className="md:text-xl sm:text-base mb-2 text-darkgrey">{project.name}</h3>
  
             <Link
               to={project.route}
-              className="bg-lightpurple rounded-full h-12 w-12 flex items-center justify-center"
+              className="bg-lightpurple rounded-full md:h-12 md:w-12 sm:h-8 sm:w-8 flex items-center justify-center"
             >
               <FaAngleRight />
             </Link>

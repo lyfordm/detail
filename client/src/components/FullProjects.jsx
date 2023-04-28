@@ -1,7 +1,11 @@
 import { useParams } from "react-router-dom";
 import projects from "../data/projects";
+import { useEffect } from "react";
 
 function FullProject() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const { id: projectId } = useParams();
 
   // Find the project based on the ID parameter
@@ -15,8 +19,8 @@ function FullProject() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center my-20 mt-20 w-4/5 mx-auto">
-      <div className="p-1 font-dm pt-3 flex flex-row gap-6 my-20">
+    <div className="flex flex-col items-center justify-center my-20 mt-20 w-4/5 mx-auto h-full">
+      <div className="p-1 font-dm pt-3 flex md:flex-row sm:flex-col gap-6 md:my-20 sm:my-5">
         <div className=" bg-lightpurple w-full p-10 flex flex-col gap-4 rounded-lg">
           <p className="flex flex-row gap-10">
             <p>Client:</p>
@@ -45,7 +49,7 @@ function FullProject() {
       <img
         src={project.image}
         alt={project.name}
-        className="w-full rounded-[20px] h-2/5"
+        className="md:w-4/6 rounded-[20px] h-2/4"
       />
     </div>
   );

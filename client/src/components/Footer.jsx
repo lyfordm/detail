@@ -46,15 +46,19 @@ const Footer = () => {
             </p>
 
             <a href="mailto:info@moonlighgkreatives.com">
-              info@moonlighgkreatives.com
+              info@moonlightkreatives.com
             </a>
             <a href="tel:+260967803424">+260967803424</a>
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center font-jost">
-        2023 Copyrights © Detail | designed and developed by {" "}
-        <a href="https://lyfordmwanza.vercel.app/" className="pl-1">Lyford Mwanza</a> 
+      <div className="flex justify-center sm:flex-col md:flex-rom items-center font-jost">
+        <p>
+        2023 Copyrights © Detail |<br className="block md:hidden"/> designed and developed by {" "}
+        </p>
+        <a href="https://lyfordmwanza.vercel.app/"
+        target="blank"
+        className="pl-1">Lyford Mwanza</a> 
       </div>
     </footer>
   );
