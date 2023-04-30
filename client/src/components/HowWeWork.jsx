@@ -1,5 +1,5 @@
 import React from "react";
-import concept from "../assets/concept.png";
+import concept from "../assets/concept.jpg";
 import iconConcept from "../assets/Icon-concept.png";
 import idea from "../assets/idea.png"
 import iconIdea from '../assets/Icon-idea.png'

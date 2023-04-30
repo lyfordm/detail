@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import header from "../assets/header1.png";
 import image1 from "../assets/image1.png";
 import { FaAngleRight, FaPhoneAlt } from "react-icons/fa";
@@ -8,6 +8,11 @@ import ProjectsStatistics from "../components/Statistics";
 import JoinUsSection from "../components/JoinUs";
 
 const Home = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="mt-20">
       <section className="relative ">
